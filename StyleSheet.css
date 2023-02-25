@@ -1,0 +1,95 @@
+
+body {
+
+    background-color: #252526;
+    /* background-color:#a4d1c8;/*green */
+    /* background-size:100% 100% auto; */
+    justify-content: center;
+    margin: 0;
+    align-items: center;
+
+}
+
+#header{
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    left: 50%;
+    margin-top: 40%;
+    transform: translate(-50%, 0);
+    background-color: #252526;
+    text-align: center;
+    border-radius: 0 0 20px 20px;
+}
+@keyframes flicker {
+    0%,
+    22%,
+    36%,
+    75% {
+      color: #fff;
+      text-shadow:
+      0 0 0.6rem #2f969c,
+      0.2rem 0.2rem 1rem #2f969c,
+      0 0 2rem #2f969c,
+      0 0.5 6rem #2f969c,
+      0 0.5 8rem #2f969c,
+      0 0.5 3rem #2f969c;
+    }
+    28%,
+    33% {
+      color: #fff;
+      text-shadow: none,
+      inset 0 0 4rem #2f969c
+    }
+    82%,
+    97% {
+      color: #fff;
+      text-shadow: none;
+    }
+    0%, 19.999%, 22%, 62.999%, 64%, 64.999%, 70%, 100% {
+		//text-shadow: none;
+    opacity: .99;
+
+	}
+	20%, 21.999%, 63%, 63.999%, 65%, 69.999% {
+		opacity: 0.4;
+	}
+  }
+
+.flicker-slow{
+  animation: flicker 3s linear infinite;
+}
+
+.flicker-fast{
+  animation: flicker 1s linear infinite;
+}
+
+
+h1{
+    font-size: 280%;
+    color: #fff;
+    letter-spacing: 8px;
+    font-family: 'Poiret One', cursive;
+    text-shadow:
+      0 0 7px #fff,
+      0 0 10px #2f969c,
+      0 0 21px #fff,
+      0 0 31px #2f969c,
+      0 0 41px #2f969c,
+      0 0 91px #2f969c;
+      animation: flicker 1.5s infinite alternate;
+      /* animation: shine 2s forwards, blink 2s 1s infinite; */
+  }
+  /* h2{
+      font-size: 280%;
+      color: #0007;
+      letter-spacing: 8px;
+      font-family: 'Poiret One', cursive;
+
+        /* animation: shine 2s forwards, blink 2s 1s infinite; */
+    }
+/* #soon{
+  margin-top: 200px;
+  text-align: center;
+
+} */ */
